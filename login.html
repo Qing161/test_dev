@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>罗小黑战记/注册登录</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+<header>
+    <img src="../image/c0.jpg" alt="" width="66" height="66" style="float: left; margin: 9px;">
+        <h3>你确定要和我流浪吗？</h3>
+        <ul>
+            <li><a href="main.html" class="button">网站首页</a></li>
+            <li><a href="news.html" class="button">新闻中心</a></li>
+            <li><a href="about.html" class="button">关于我们</a></li>
+            <li><a href="login.html" class="button">注册登录</a></li>
+            <li><a href="connect.html" class="button">联系我们</a></li>
+        </ul>
+    </header>
+<p><br><br><br><br></p>
+<div class="form-container">
+    <h1 style="text-align: center;">用户注册</h1>
+
+    <form action="/register" method="post" autocomplete="off">
+        <table>
+            <tr>
+                <th><span class="required">*</span>昵称:</th>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <th><span class="required">*</span>地区:</th>
+                <td>
+                    <select id="provinces" name="provinces" required>
+                        <option value="beijing">北京</option>
+                        <option value="tianjin">天津</option>
+                        <option value="hebei">河北</option>
+                        <option value="shanxi">山西</option>
+                        <option value="neimenggu">内蒙古</option>
+                        <option value="liaoning">辽宁</option>
+                        <option value="jilin">吉林</option>
+                        <option value="heilongjiang">黑龙江</option>
+                        <option value="shanghai">上海</option>
+                        <option value="jiangsu">江苏</option>
+                        <option value="zhejiang">浙江</option>
+                        <option value="anhui">安徽</option>
+                        <option value="fujian">福建</option>
+                        <option value="jiangxi">江西</option>
+                        <option value="shandong">山东</option>
+                        <option value="henan">河南</option>
+                        <option value="hubei">湖北</option>
+                        <option value="hunan">湖南</option>
+                        <option value="guangdong">广东</option>
+                        <option value="guangxi">广西</option>
+                        <option value="hainan">海南</option>
+                        <option value="chongqing">重庆</option>
+                        <option value="sichuan">四川</option>
+                        <option value="guizhou">贵州</option>
+                        <option value="yunnan">云南</option>
+                        <option value="xingjiang">新疆</option>
+                        <option value="tibet">西藏</option>
+                        <option value="ningxia">宁夏</option>
+                        <option value="qinghai">青海</option>
+                        <option value="shanxi">陕西</option>
+                        <option value="gansu">甘肃</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>性别:</th>
+                <td>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">男</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">女</label>
+
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">其他</label>
+                    </div>
+                </td>
+            </tr>
+<!--            <tr>-->
+<!--                <th><span class="required">*</span>手机号:</th>-->
+<!--                <td><input type="text" name="mphone" maxlength="11" required></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <th><span class="required">*</span>验证码:</th>-->
+<!--                <td>-->
+<!--                    <input type="text" name="vcode" required>-->
+<!--                    <button type="button" class="btn">获取验证码</button>-->
+<!--                </td>-->
+<!--            </tr>-->
+            <tr>
+                <th><span class="required">*</span>密码:</th>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <th><span class="required">*</span>确认密码:</th>
+                <td><input type="password" name="password_confirm" required></td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label><br>
+                        <input type="checkbox" name="agree" required>
+                        我已阅读并同意<a href="#">《用户协议》</a>和<a href="#">《隐私政策》</a>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit" class="btn">立即注册</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+    <footer>
+        <p>联系我们3225950264@qq.com</p>
+        <p>山西 太原</p>
+    </footer>
+</body>
+</html>

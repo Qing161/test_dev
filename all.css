@@ -1,0 +1,288 @@
+/*************************************** 所有页面顶部 ****************************************/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.99);
+    height: 80px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1000; /* Added this line to ensure the header is on top */
+}
+
+header h3 {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+    background-position: center;
+    width: 250px;
+    text-indent: -99999;
+}
+
+header ul {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+/*************************************** 所有页面顶部 ****************************************/
+/***************************************************************************/
+body {
+    background-color: rgba(0,0,0,0.05); /* 设置非主体背景为灰色 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+    max-width: 900px; /* 根据需要调整最大宽度 */
+    margin: auto; /* 主体内容居中 */
+    background-color: white; /* 确保主要内容有一个清晰的背景 */
+    padding: 20px; /* 给主要内容一些填充 */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* 可选：给主要内容添加阴影效果 */
+}
+.form-container {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.picture {
+    width: 99vw;            /* 容器宽度为视口宽度的99% */
+    height: auto;          /* 高度自适应 */
+    box-sizing: border-box; /* 包含边框和内边距在内的宽高计算 */
+}
+
+.picture img {
+    width: 100%;           /* 图片宽度占满容器 */
+    height: auto;          /* 图片高度自适应，保持比例 */
+    max-height: 430px;     /* 最大高度限制为430px */
+    display: block;        /* 使图像成为块级元素 */
+}
+.content1 h1 {
+    display: inline-block;
+    padding: 50px 20px;
+    position: relative;
+    margin: 20px auto;
+}
+.content1 h1::before, .content1 h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 30px;
+    background-color: rgb(245, 87, 39);
+}
+.content1 h1::before {
+    left: -50px;
+}
+.content1 h1::after {
+    right: -50px;
+}
+.content1 {
+    width: 99%;
+    max-width: 800px;
+    margin: 0px auto;
+
+}
+.content1 p {
+    text-align: justify; 
+    margin-bottom: 1em;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-indent: 2em;
+}
+.content1 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+}
+input[type="text"], input[type="password"], input[type="email"], button {
+    width: calc(100% - 22px); /* 保证输入框和按钮几乎占满单元格，留出一些间距 */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+select {
+    width: calc(100% - 22px); /* 保证输入框和按钮几乎占满单元格，留出一些间距 */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+        }
+
+button.btn {
+    width: auto; /* 让按钮只占据必要的宽度 */
+    cursor: pointer;
+}
+h2 {
+font-family: 'Comic Sans MS', '';
+}
+/* 复选框和链接样式 */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+/**************************************** 提交按钮样式 *****************************/
+button[type="submit"] {
+    width: 100%; /* 占据整行 */
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+/**************************************** 提交按钮样式 *****************************/
+/**************************** 所有界面底部信息 ***************************/
+footer {
+    background-color:rgb(0, 0, 0,0.36);
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 15px;
+    color: #3e3e3e;
+    border-top: 1px solid #ddd;
+}
+footer p {
+    margin: 5px;
+}
+/**************************** 所有界面底部信息 ***************************/
+/********************************** main中最下面的图片 *********************************/
+
+.news-container {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+.gif {
+        display: flex; /* 使用Flexbox布局 */
+        justify-content: center; /* 水平居中对齐 */
+        flex-wrap: nowrap; /* 不换行 */
+    }
+
+    .gif img {
+        width: 100px; /* 设置图片宽度 */
+        height: auto; /* 自动调整高度 */
+        margin: 0 5px; /* 图片之间的间距 */
+    }
+.news-block {
+    display: block;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    transition: transform .2s;
+}
+
+.news-block:hover {
+    transform: translateY(-5px);
+}
+
+.news-block h2 {
+    font-size: 1.5em;
+    padding: 15px;
+    margin: 0;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.news-block p {
+    padding: 15px;
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.6;
+}
+/********************************** main中最下面的图片 *********************************/
+/**************************** main中的轮播图片 **********************************/
+#max{
+  width: 800px;
+  height: 400px;
+  align-items: center;
+  margin: 5% auto;
+  margin-top: 0%;
+}
+.re{
+  position: relative;
+  height: 400px;
+}
+.re ul{
+  list-style-type:none ;
+}
+.re ul>li{
+  width: 500px;
+  height: 250px;
+  position: absolute;
+
+  transition: 1s;
+  opacity: 0;
+}
+.re ul>li img{
+  width: 800px;
+  height: 400px;
+  border-radius: 10%;
+  border: 15px solid rgba(0,0,0,.1);
+}
+#max ol {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5,75px);
+  grid-template-rows: auto;
+  grid-gap: 1em;gap: 1em;
+  float: right;
+  margin-top: 450px;
+  list-style: none;
+  top:0;left:0;
+}
+#max ol li {
+  width: 20px;
+  height: 8px;
+  font-size: 15px;
+  line-height: 20px;
+  float: left;
+  text-align: center;
+  border-radius: 2em;
+  border: 5px solid #999999;
+}
+/**************************** main中的轮播图片 **********************************/
